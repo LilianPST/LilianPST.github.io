@@ -1,0 +1,100 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 900px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 8vw, 5.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: var(--space-lg);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin-bottom: var(--space-2xl);
+    line-height: 1.7;
+    animation: fadeInUp 0.8s ease-out 0.1s backwards;
+}
+
+.hero-cta {
+    display: flex;
+    gap: var(--space-md);
+    animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+/* Floating Cards */
+.hero-visual {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 500px;
+    height: 500px;
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.floating-card {
+    position: absolute;
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+}
+
+.card-1 {
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    right: 10%;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(236, 72, 153, 0.1));
+    animation: float 6s ease-in-out infinite;
+}
+
+.card-2 {
+    width: 180px;
+    height: 180px;
+    top: 50%;
+    right: 30%;
+    background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(139, 92, 246, 0.1));
+    animation: float 7s ease-in-out infinite 1s;
+}
+
+.card-3 {
+    width: 150px;
+    height: 200px;
+    bottom: 20%;
+    right: 15%;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(59, 130, 246, 0.1));
+    animation: float 8s ease-in-out infinite 2s;
+}
+
+@media (max-width: 968px) {
+    .hero-visual {
+        opacity: 0.2;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-cta {
+        flex-direction: column;
+    }
+
+    .hero-visual {
+        display: none;
+    }
+}

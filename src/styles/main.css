@@ -1,0 +1,9 @@
+@import './variables.css';
+@import './reset.css';
+@import './base.css';
+@import './sections/nav.css';
+@import './sections/hero.css';
+@import './sections/about.css';
+@import './sections/education.css';
+@import './sections/work.css';
+@import './sections/contact.css';

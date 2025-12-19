@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilia Pesenti — Développeuse & Designer</title>
+    <meta name="description"
+        content="Portfolio de Lilia Pesenti, développeuse créative spécialisée en expériences web modernes.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">LP</span>
+                <span class="logo-text">
+                    <span class="logo-name">Lilia Pesenti</span>
+                    <span class="logo-tagline">Informaticien</span>
+                </span>
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">
+                    <span class="nav-number">01</span>
+                    <span class="nav-label">À propos</span>
+                </a>
+                <a href="#education" class="nav-link">
+                    <span class="nav-number">02</span>
+                    <span class="nav-label">Formations</span>
+                </a>
+                <a href="#experience" class="nav-link">
+                    <span class="nav-number">03</span>
+                    <span class="nav-label">Expériences</span>
+                </a>
+                <a href="#work" class="nav-link">
+                    <span class="nav-number">04</span>
+                    <span class="nav-label">Projets</span>
+                </a>
+                <a href="#contact" class="nav-cta">Discutons</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Bonjour, je suis <span class="gradient-text">Lilian Pesenti</span><br>
+                    bienvenue dans mon Portfolio !
+                </h1>
+                <p class="hero-subtitle">
+                    Profil polyvalent naviguant entre administration réseaux et développement.
+                    Passionné par l'informatique, je me forme continuellement pour maîtriser chaque aspect de cet
+                    écosystème.
+                </p>
+                <div class="hero-cta">
+                    <a href="#work" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1"></div>
+                <div class="floating-card card-2"></div>
+                <div class="floating-card card-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- About Bento Grid -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-intro">
+                <span class="section-number">01</span>
+                <h2 class="section-main-title">À propos de moi</h2>
+            </div>
+            <div class="bento-grid">
+                <div class="bento-item bento-large glass-card">
+                    <div class="bento-content">
+                        <span class="label">Qui suis-je</span>
+                        <h2>Construire le web,<br>un pixel à la fois.</h2>
+                        <p>Étudiante passionnée en informatique, je combine design et développement pour créer des
+                            expériences web élégantes et performantes. Toujours en quête d'apprendre et d'expérimenter.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bento-item bento-stat glass-card">
+                    <div class="stat-number" style="font-size: 2rem;">Alternant</div>
+                    <div class="stat-label">Statut actuel</div>
+                </div>
+
+                <div class="bento-item bento-stat glass-card">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Projets réalisés</div>
+                </div>
+
+                <div class="bento-item bento-skills glass-card">
+                    <span class="label">Compétences Techniques</span>
+
+                    <div class="skills-categories">
+                        <!-- Réseau -->
+                        <div class="skill-category">
+                            <h3>Réseau & Virtualisation</h3>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Adressage IP</span>
+                                <span class="skill-tag">Routage</span>
+                                <span class="skill-tag">VLAN</span>
+                                <span class="skill-tag">Firewall</span>
+                                <span class="skill-tag">Virtualisation</span>
+                            </div>
+                        </div>
+
+                        <!-- Développement -->
+                        <div class="skill-category">
+                            <h3>Développement</h3>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">PHP</span>
+                                <span class="skill-tag">HTML/CSS</span>
+                                <span class="skill-tag">SQL</span>
+                            </div>
+                        </div>
+
+                        <!-- Systèmes -->
+                        <div class="skill-category">
+                            <h3>Systèmes & Embarqué</h3>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Windows</span>
+                                <span class="skill-tag">Linux</span>
+                                <span class="skill-tag">Raspberry Pi</span>
+                                <span class="skill-tag">Arduino</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-intro">
+                <span class="section-number">02</span>
+                <h2 class="section-main-title">Formations</h2>
+            </div>
+
+            <div class="education-container">
+                <!-- School Timeline -->
+                <div class="timeline">
+                    <!-- BUT INFO -->
+                    <a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/but-informatique-parcours-deploiement-d-applications-communicantes-et-securisees"
+                        target="_blank" class="edu-card">
+                        <span class="edu-date">2025</span>
+                        <h3 class="edu-title">BUT Informatique (DACS)</h3>
+                        <p class="edu-school">IUT de Montpellier, Hérault</p>
+                        <p class="edu-location">
+                            <span>2ème Année • Déploiement d'Applications Communicantes et Sécurisées</span>
+                        </p>
+                    </a>
+
+                    <!-- BTS CIEL -->
+                    <a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-cybersecurite-informatique-et-reseaux-electronique-option-a-informatique-et-reseaux"
+                        target="_blank" class="edu-card">
+                        <span class="edu-date">2023 - 2025</span>
+                        <h3 class="edu-title">BTS CIEL - Option A</h3>
+                        <p class="edu-school">Lycée Dhuoda, Nîmes, Gard</p>
+                        <p class="edu-location">
+                            <span>Informatique et Réseaux • Obtenu</span>
+                        </p>
+                    </a>
+
+                    <!-- BAC STI2D -->
+                    <a href="https://www.onisep.fr/formation/apres-la-3-la-voie-generale-et-technologique/qu-est-ce-que-la-voie-generale-et-technologique/la-voie-technologique-en-premiere-et-en-terminale/le-bac-sti2d-sciences-et-technologies-de-l-industrie-et-du-developpement-durable"
+                        target="_blank" class="edu-card">
+                        <span class="edu-date">2021 - 2023</span>
+                        <h3 class="edu-title">BAC STI2D</h3>
+                        <p class="edu-school">Lycée Albert Einstein, Bagnols-sur-Cèze, Gard</p>
+                        <p class="edu-location">
+                            <span>Sciences et Technologies de l'Industrie et du Développement Durable • Obtenu</span>
+                        </p>
+                    </a>
+                </div>
+
+                <!-- Certifications -->
+                <div class="cert-column">
+                    <h3 class="label" style="margin-bottom: 2rem;">Certifications</h3>
+                    <div class="certs-grid">
+                        <a href="https://secnumacademie.gouv.fr/" target="_blank" class="cert-card">
+                            <div class="cert-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                            </div>
+                            <div class="cert-info">
+                                <h4>SecNumAcadémie</h4>
+                                <span class="cert-issuer">ANSSI - Agence nationale de la sécurité des systèmes
+                                    d'information</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Experience Section -->
+    <section id="experience" class="education">
+        <div class="container">
+            <div class="section-intro">
+                <span class="section-number">03</span>
+                <h2 class="section-main-title">Expériences</h2>
+            </div>
+
+            <div class="education-container">
+                <div class="timeline">
+                    <!-- Capgemini -->
+                    <a href="https://www.capgemini.com/fr-fr" target="_blank" class="edu-card">
+                        <span class="edu-date">2025 - Présent</span>
+                        <h3 class="edu-title">Capgemini Engineering</h3>
+                        <p class="edu-school">Alternance • Bagnols-sur-Cèze</p>
+                        <p class="edu-location" style="margin-top: 0.5rem; display: block;">
+                            Administration de bases de données et virtualisation (VirtualBox, VMware).
+                        </p>
+                    </a>
+
+                    <!-- Nuit de l'Info -->
+                    <a href="https://www.nuitdelinfo.com/" target="_blank" class="edu-card">
+                        <span class="edu-date">2025</span>
+                        <h3 class="edu-title">Nuit de l'Info</h3>
+                        <p class="edu-school">Hackathon • IUT Montpellier</p>
+                        <p class="edu-location" style="margin-top: 0.5rem; display: block;">
+                            Développement intensif d'un site web en équipe, du coucher au lever du soleil, sur un thème
+                            imposé.
+                        </p>
+                    </a>
+
+                    <!-- PowerMac -->
+                    <a href="https://powermac.fr/" target="_blank" class="edu-card">
+                        <span class="edu-date">2023 (6 semaines)</span>
+                        <h3 class="edu-title">PowerMac Informatique</h3>
+                        <p class="edu-school">Stage • Bagnols-sur-Cèze</p>
+                        <p class="edu-location" style="margin-top: 0.5rem; display: block;">
+                            Création d'une architecture réseau sécurisée : Firewall, Serveurs, Docker, Proxmox.
+                            Contribution à la croissance d'une TPE locale.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Work / Projects -->
+    <section id="work" class="work">
+        <div class="container">
+            <div class="section-intro">
+                <span class="section-number">04</span>
+                <h2 class="section-main-title">Mes projets</h2>
+            </div>
+            <div class="section-header">
+                <span class="label">Sélection</span>
+                <h2 class="section-title">Projets en vedette</h2>
+            </div>
+
+            <div class="projects-list">
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Neural Canvas</h3>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <p class="project-desc">
+                            Un outil créatif propulsé par l'IA qui transforme des croquis en designs aboutis grâce au
+                            machine learning.
+                        </p>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>OpenAI</span>
+                            <span>Canvas API</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Flow Dashboard</h3>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <p class="project-desc">
+                            Plateforme d'analyse en temps réel avec des visualisations de données élégantes et des
+                            fonctionnalités collaboratives.
+                        </p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>D3.js</span>
+                            <span>WebSocket</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Soundwave Studio</h3>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <p class="project-desc">
+                            Station de travail audio basée sur navigateur. Enregistrez, éditez et produisez de la
+                            musique directement dans votre navigateur.
+                        </p>
+                        <div class="project-tags">
+                            <span>Web Audio API</span>
+                            <span>Vue.js</span>
+                            <span>Tone.js</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-intro">
+                <span class="section-number">05</span>
+                <h2 class="section-main-title">Contact</h2>
+            </div>
+            <div class="contact-content">
+                <span class="label">Prendre contact</span>
+
+
+                <div class="contact-actions" style="margin-bottom: 2rem;">
+                    <button id="showFormBtn" class="contact-link"
+                        style="width: 100%; cursor: pointer; color: var(--color-text-primary); text-align: left; font-family: var(--font-body);">
+                        <span>M'envoyer un mail</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 4L16 16M16 16V6M16 16H6" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div id="formContainer" style="display: none; margin-top: 2rem; position: relative;">
+                    <button id="hideFormBtn"
+                        style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; color: var(--color-text-secondary); cursor: pointer; display: flex; align-items: center; gap: 0.5rem; z-index: 10;">
+                        <span>Réduire</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M18 15l-6-6-6 6" />
+                        </svg>
+                    </button>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="subject">Objet</label>
+                            <input type="text" id="subject" class="form-input"
+                                placeholder="Ex: Proposition de stage, Echange..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-textarea" placeholder="Votre message..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Envoyer</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 4L16 16M16 16V6M16 16H6" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-links">
+
+                    <a href="https://github.com/LilianPST" class="contact-link" target="_blank">
+                        <span>GitHub</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 4L16 16M16 16V6M16 16H6" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lilian-pesenti-5a633a328" class="contact-link" target="_blank">
+                        <span>LinkedIn</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 4L16 16M16 16V6M16 16H6" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Lilia Pesenti. Fait avec passion.</p>
+        </div>
+    </footer>
+
+    <script src="/src/scripts/main.js" type="module"></script>
+</body>
+
+</html>

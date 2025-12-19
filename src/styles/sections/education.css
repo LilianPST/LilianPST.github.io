@@ -1,0 +1,136 @@
+.education {
+    padding: var(--space-3xl) 0;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-2xl);
+}
+
+/* Timeline Styles */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    position: relative;
+    padding-left: var(--space-lg);
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--color-accent) 0%, rgba(255, 255, 255, 0.05) 100%);
+}
+
+.edu-card {
+    position: relative;
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    transition: all var(--transition-base);
+}
+
+.edu-card::before {
+    content: '';
+    position: absolute;
+    left: calc(var(--space-lg) * -1 - 5px);
+    /* Align with timeline line */
+    top: 24px;
+    width: 9px;
+    height: 9px;
+    background: var(--color-bg);
+    border: 2px solid var(--color-accent);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.4);
+}
+
+.edu-card:hover {
+    transform: translateX(10px);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.edu-date {
+    font-family: var(--font-display);
+    color: var(--color-accent);
+    font-size: 0.875rem;
+    margin-bottom: var(--space-xs);
+    display: block;
+}
+
+.edu-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+    color: var(--color-text-primary);
+}
+
+.edu-school {
+    color: var(--color-text-secondary);
+    font-size: 1rem;
+    margin-bottom: var(--space-xs);
+}
+
+.edu-location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text-tertiary);
+    font-size: 0.875rem;
+}
+
+/* Certifications */
+.certs-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.cert-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    transition: all var(--transition-base);
+}
+
+.cert-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--color-accent);
+}
+
+.cert-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(139, 92, 246, 0.1);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-accent);
+}
+
+.cert-info h4 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.cert-issuer {
+    font-size: 0.875rem;
+    color: var(--color-text-tertiary);
+}
+
+@media (max-width: 768px) {
+    .education-container {
+        grid-template-columns: 1fr;
+    }
+}
